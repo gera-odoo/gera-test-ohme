@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <data>
+    <record id="ohme_helpdesk_stage_form_view" model="ir.ui.view">
+      <field name="name">ohme.helpdesk.stage</field>
+      <field name="model">helpdesk.stage</field>
+      <field name="inherit_id" ref="helpdesk.helpdesk_stage_view_form" />
+      <field name="arch" type="xml">
+        <field name="fold" position="after">
+          <field name="x_on_reply_stage_id" />
+        </field>
+      </field>
+    </record>
+  </data>
+</odoo>
