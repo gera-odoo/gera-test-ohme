@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="view_stock_move_operations_ohme_assign_lot" model="ir.ui.view">
+        <field name="name">stock.move.operations.form</field>
+        <field name="model">stock.move</field>
+        <field name="inherit_id" ref="stock.view_stock_move_operations" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='move_line_ids']" position="before">
+                <field name="lot_serial_excel_file" widget="binary"
+                       attrs="{'invisible': [('state', '!=', 'assigned')]}"/>
+                <button name="import_lot_serial"
+                        string="Import Lot/Serial"
+                        type="object"
+                        attrs="{'invisible': ['|', ('lot_serial_excel_file', '=', False),  ('state', '!=', 'assigned')]}"
+                        class="btn-primary"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

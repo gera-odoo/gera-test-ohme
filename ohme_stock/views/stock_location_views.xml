@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="view_location_form_qa_passed_location" model="ir.ui.view">
+        <field name="name">stock.location.form</field>
+        <field name="model">stock.location</field>
+        <field name="inherit_id" ref="stock.view_location_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='company_id']" position="after">
+                <field name="move_qa_passed_location_id" domain="[
+                                             ('usage', '=', 'internal'),
+                                             ('id', '!=', id),
+                                             '|',
+                                             ('company_id', '=', False),
+                                             ('company_id', '=', company_id)]"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

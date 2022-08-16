@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="ohme_helpdesk_ticket_view_form" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.form.view</field>
+        <field name="model">helpdesk.ticket</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form"/>
+        <field name="arch" type="xml">
+            <div class="oe_button_box" position="inside">
+                <button class="oe_stat_button" name="action_view_related_tickets"
+                        icon="fa-truck" type="object" width="175"
+                        attrs="{'invisible': [('installer_parent_id', '!=', False)]}"
+                        context="{'show_installer_tickets': True}">
+                    <div class="o_stat_info">
+                        <field name="installer_ticket_count" class="o_stat_value"/>
+                        <span class="o_stat_text"> Installer Tickets</span>
+                    </div>
+                </button>
+                <button class="or_stat_button" name="action_view_related_tickets"
+                        icon="fa-ticket" type="object" width="175" context="{'show_active_tickets': True}">
+                    <div class="o_stat_info">
+                        <field name="related_active_ticket_count" class="o_stat_value"/>
+                        <span class="o_stat_text"> Active Tickets</span>
+                    </div>
+                </button>
+                <button class="or_stat_button" name="action_view_related_tickets"
+                        icon="fa-power-off" type="object" width="175">
+                    <div class="o_stat_info">
+                        <field name="related_closed_ticket_count" class="o_stat_value"/>
+                        <span class="o_stat_text"> Previous Tickets</span>
+                    </div>
+                </button>
+            </div>
+            <field name="company_id" position="after">
+                <field name="installer_parent_id" />
+            </field>
+        </field>
+    </record>
+
+</odoo>
