@@ -1,0 +1,4 @@
+[submodule "gera-odoo/helpdesk_ohme"]
+	path = gera-odoo/helpdesk_ohme
+	url = git@github.com:gera-odoo/helpdesk_ohme.git
+	branch = main
