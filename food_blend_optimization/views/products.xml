@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="product_product_inherit" model="ir.ui.view">
+        <field name="name">Product Inherit</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='uom_po_id']" position="after">
+                <field name="display_nutrimental_info" invisible="1"/>
+            </xpath>
+            <page name="general_information" position="after">
+                <page name="nutrimental" string="Nutrimental info"
+                      attrs="{'invisible':[('display_nutrimental_info','=',False)]}">
+                    <field name="nutrimental_ids">
+                        <tree string="Nutrimental Info" editable="bottom">
+                            <field name="group_id"/>
+                            <field name="code"/>
+                            <field name="nutriment_id"/>
+                            <field name="value"/>
+                            <field name="uom_id"/>
+                        </tree>
+                    </field>
+                </page>
+            </page>
+        </field>
+    </record>
+
+    <record id="view_product_category_form" model="ir.ui.view">
+        <field name="name">Info nutrimental</field>
+        <field name="model">product.category</field>
+        <field name="inherit_id" ref="product.product_category_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[2]" position="after">
+                <group>
+                    <group name="food_left" string="Nutrimental info">
+                        <field name="display_nutrimental_info"/>
+                    </group>
+                    <group/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

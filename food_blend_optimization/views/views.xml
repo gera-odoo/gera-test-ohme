@@ -1,0 +1,138 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+
+        <record model="ir.ui.view" id="blend_optimization_tree">
+            <field name="name">Blend Optimization</field>
+            <field name="model">blend.optimization</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="need_id"/>
+                    <field name="state"/>
+                    <field name="create_date"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="blend_optimization_form" model="ir.ui.view">
+            <field name="name">Blend Optimization</field>
+            <field name="model">blend.optimization</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="state" widget="statusbar"/>
+                        <button name="get_process_line" string="Process" type="object" class="oe_highlight"
+                                attrs="{'invisible':[('state', '=','done')]}"/>
+                       <!--  <button name="set_draft" string="Establecer borrador" type="object" class="oe_highlight"
+                                attrs="{'invisible':[('status', '=','draft')]}"/>
+                        <button name="set_query" string="Establecer consulta" type="object" class="oe_highlight"
+                                attrs="{'invisible':[('status', '=','query')]}"/>-->
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" required="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="need_id"/>
+                                <field name="solution" attrs="{'invisible':[('state','!=','done')]}"/>
+                                <field name="objective_value"/>
+
+                                <!--                            <field name="sale_pct" widget="percentage"/>-->
+                            </group>
+                            <group>
+                                <field name="product_ids" widget="many2many_tags"/>
+                                <field name="total_mix" attrs="{'invisible':[('state','!=','done')]}"/>
+                            </group>
+                        </group>
+                        <notebook position="inside">
+                            <page string="Needs" name="needs">
+                                <field name="needs_ids">
+                                    <tree>
+                                        <field name="code"/>
+                                        <field name="nutriment_ids" widget="many2many_tags"/>
+                                        <field name="type"/>
+                                        <field name="reference_value"/>
+                                        <field name="uom_id"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Process" name="process">
+                                <field name="process_ids">
+                                    <tree>
+                                        <field name="product_id"/>
+                                        <field name="nutriment_ids" widget="many2many_tags"/>
+                                        <field name="reference_value"/>
+                                        <field name="reference_unit"/>
+                                        <field name="actual_value"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Results" name="result">
+                                <field name="result_ids">
+                                    <tree>
+                                        <field name="product_id"/>
+                                        <field name="value"/>
+                                        <field name="percentage" widget="percentage"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+
+                    <div class="oe_chatter" modifiers="{}">
+                        <field name="message_follower_ids" widget="mail_followers" modifiers="{}"/>
+                        <field name="activity_ids" widget="mail_activity" modifiers="{}"/>
+                        <field name="message_ids" widget="mail_thread" modifiers="{}"
+                               options="{'display_log_button': True}"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="blend_optimization_action">
+            <field name="name">Blend Optimization</field>
+            <field name="res_model">blend.optimization</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- server action to the one above -->
+        <!--
+            <record model="ir.actions.server" id="pdcaas.action_server">
+              <field name="name">pdcaas server</field>
+              <field name="model_id" ref="model_pdcaas_pdcaas"/>
+              <field name="state">code</field>
+              <field name="code">
+                action = {
+                  "type": "ir.actions.act_window",
+                  "view_mode": "tree,form",
+                  "res_model": model._name,
+                }
+              </field>
+            </record>
+        -->
+
+        <!-- Top menu item -->
+
+        <menuitem name="Blend Optimization" id="blend_optimization" sequence="41"
+                  web_icon="food_blend_optimization,static/description/icon.png" action="blend_optimization_action"/>
+
+        <!-- menu categories -->
+        <!--
+            <menuitem name="Menu 1" id="pdcaas.menu_1" parent="pdcaas.menu_root"/>
+            <menuitem name="Menu 2" id="pdcaas.menu_2" parent="pdcaas.menu_root"/>
+        -->
+        <!-- actions -->
+        <!--
+            <menuitem name="List" id="pdcaas.menu_1_list" parent="pdcaas.menu_1"
+                      action="pdcaas.action_window"/>
+            <menuitem name="Server to list" id="pdcaas" parent="pdcaas.menu_2"
+                      action="pdcaas.action_server"/>
+        -->
+    </data>
+</odoo>

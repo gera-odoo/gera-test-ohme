@@ -1,0 +1,719 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* food_blend_optimization
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-06 00:35+0000\n"
+"PO-Revision-Date: 2022-04-06 00:35+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__message_needaction
+msgid "Action Needed"
+msgstr "Acción Necesaria"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs__action_id
+msgid "Action needed"
+msgstr "Acción Necesaria"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs__active
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_value__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Decorador de Excepción de Actividad"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__activity_state
+msgid "Activity State"
+msgstr "Estado de actividad"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__message_attachment_count
+msgid "Attachment Count"
+msgstr "Documentos Adjuntos"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs__based_on
+msgid "Based On"
+msgstr "Basado en"
+
+#. module: food_blend_optimization
+#: model:ir.actions.act_window,name:food_blend_optimization.blend_optimization_action
+#: model:ir.ui.menu,name:food_blend_optimization.blend_optimization
+msgid "Blend Optimization"
+msgstr "Optimización de mezclas"
+
+#. module: food_blend_optimization
+#: model:ir.model,name:food_blend_optimization.model_blend_optimization_line
+msgid "Blend lines"
+msgstr "Líneas de mezcla"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_line__blend_id
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_process__blend_id
+msgid "Blend name"
+msgstr "Nombre"
+
+#. module: food_blend_optimization
+#: model:ir.model,name:food_blend_optimization.model_blend_optimization
+msgid "Blend optimization"
+msgstr "Optimización de mezclas"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs_line__objective_function
+msgid "Builts OF"
+msgstr "Construye FO"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_info__group_id
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_value__group_id
+msgid "Classification"
+msgstr "Clasificación"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_info__code
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs__reference_code
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs_line__code
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_value__code
+#: model_terms:ir.ui.view,arch_db:food_blend_optimization.nutrimental_needs_form
+msgid "Code"
+msgstr "Código"
+
+#. module: food_blend_optimization
+#: model:ir.ui.menu,name:food_blend_optimization.blend_configurations
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__create_uid
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_line__create_uid
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_process__create_uid
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_group__create_uid
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_info__create_uid
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs__create_uid
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs_line__create_uid
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs__create_uid
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs_line__create_uid
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_value__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__create_date
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_line__create_date
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_process__create_date
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_group__create_date
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_info__create_date
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs__create_date
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs_line__create_date
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs__create_date
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs_line__create_date
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_value__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_value__uom_id
+msgid "Default unit of measure"
+msgstr "Unidad de medida por defecto"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,help:food_blend_optimization.field_blend_optimization_line__uom_id
+msgid "Default unit of measure used for all stock operations."
+msgstr "Unidad de medida por defecto utilizada para todas las operaciones"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__display_name
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_line__display_name
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_process__display_name
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_group__display_name
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_info__display_name
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs__display_name
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs_line__display_name
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_value__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs__display_name
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs_line__display_name
+msgid "Display name"
+msgstr "Nombre mostrado"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_product_category__display_nutrimental_info
+#: model:ir.model.fields,field_description:food_blend_optimization.field_product_product__display_nutrimental_info
+msgid "Display nutrimental info?"
+msgstr "Mostrar información nutrimental"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields.selection,name:food_blend_optimization.selection__nutrimental_pairs_line__unit_type__dividend
+msgid "Dividend"
+msgstr "Dividendo"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields.selection,name:food_blend_optimization.selection__nutrimental_pairs_line__unit_type__divider
+msgid "Divider"
+msgstr "Divisor"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields.selection,name:food_blend_optimization.selection__blend_optimization__state__done
+msgid "Done"
+msgstr "Hecho"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields.selection,name:food_blend_optimization.selection__blend_optimization__state__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Seguidores (Canales)"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Contactos)"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__global_restrictions
+msgid "Global restrictions"
+msgstr "Restricciones Globales"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_line__global_nutrs
+msgid "Global weight"
+msgstr "Peso Global"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,help:food_blend_optimization.field_blend_optimization_line__global_nutrs
+msgid "Global weight for the equation of the product"
+msgstr "Peso global para la ecuación del producto"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields.selection,name:food_blend_optimization.selection__nutrimental_pairs_line__type__group
+msgid "Group"
+msgstr "Grupo"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__id
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_line__id
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_process__id
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_group__id
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_info__id
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs__id
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs_line__id
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs__id
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs_line__id
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_value__id
+msgid "ID"
+msgstr "ID"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__activity_exception_icon
+msgid "Icon"
+msgstr "Icono"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,help:food_blend_optimization.field_blend_optimization__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icono para indicar excepción de actividad"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,help:food_blend_optimization.field_blend_optimization__message_needaction
+#: model:ir.model.fields,help:food_blend_optimization.field_blend_optimization__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Si se marca se debe a que hay mensajes nuevos que requieren su atención"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,help:food_blend_optimization.field_blend_optimization__message_has_error
+#: model:ir.model.fields,help:food_blend_optimization.field_blend_optimization__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si se marca, se debe a que algunos mensajes presentan un error de entrega"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,help:food_blend_optimization.field_nutrimental_needs_line__objective_function
+msgid ""
+"If it is true, it will be considered for the calculation of the objective "
+"function"
+msgstr "Si este valor es verdadero, se considerará la línea para el cálculo de la función objetivo"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__message_is_follower
+msgid "Is Follower"
+msgstr "Es seguidor"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs_line__is_div
+msgid "Is divider"
+msgstr "Es divisor"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization____last_update
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_line____last_update
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_process____last_update
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_group____last_update
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_info____last_update
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs____last_update
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs_line____last_update
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs____last_update
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs_line____last_update
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_value____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__write_uid
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_line__write_uid
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_process__write_uid
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_group__write_uid
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_info__write_uid
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs__write_uid
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs_line__write_uid
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs__write_uid
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs_line__write_uid
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_value__write_uid
+msgid "Last Updated by"
+msgstr "Última modificación por"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__write_date
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_line__write_date
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_process__write_date
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_group__write_date
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_info__write_date
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs__write_date
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs_line__write_date
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs__write_date
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs_line__write_date
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_value__write_date
+msgid "Last Updated on"
+msgstr "Última modificación el"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs__pair_lines
+msgid "Lines"
+msgstr "Líneas"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Archivo Principal"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__message_has_error
+msgid "Message Delivery error"
+msgstr "Error de envío"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__name
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_group__name
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs__name
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_value__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_process__need_line_id
+msgid "Need Line"
+msgstr "Línea de requerimiento"
+
+#. module: food_blend_optimization
+#: model_terms:ir.ui.view,arch_db:food_blend_optimization.blend_optimization_form
+#: model_terms:ir.ui.view,arch_db:food_blend_optimization.nutrimental_needs_form
+msgid "Needs"
+msgstr "Requerimiento"
+
+#. module: food_blend_optimization
+#: model:ir.model,name:food_blend_optimization.model_nutrimental_needs
+msgid "Needs group"
+msgstr "Requerimientos Especiales"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Fecha límite para siguiente actividad"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__activity_summary
+msgid "Next Activity Summary"
+msgstr "Resumen para siguiente actividad"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__activity_type_id
+msgid "Next Activity Type"
+msgstr "Tipo de siguiente actividad"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de acciones"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número de errores"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,help:food_blend_optimization.field_blend_optimization__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Número de mensajes que requieren una acción"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,help:food_blend_optimization.field_blend_optimization__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de entrega"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,help:food_blend_optimization.field_blend_optimization__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Número de mensajes no leídos"
+
+#. module: food_blend_optimization
+#: model:ir.model,name:food_blend_optimization.model_nutrimental_value
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_info__nutriment_id
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs_line__nutriment_ids
+#: model:ir.model.fields.selection,name:food_blend_optimization.selection__nutrimental_pairs_line__type__nutriment
+msgid "Nutriment"
+msgstr "Nutrimento"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs__nutriment_reference_id
+msgid "Nutriment base"
+msgstr "Información nutrimental"
+
+#. module: food_blend_optimization
+#: model:ir.ui.menu,name:food_blend_optimization.nutrimental_groups
+msgid "Nutrimental Groups"
+msgstr "Grupo nutrimental"
+
+#. module: food_blend_optimization
+#: model:ir.model,name:food_blend_optimization.model_nutrimental_info
+#: model:ir.ui.menu,name:food_blend_optimization.nutrimental_info
+#: model_terms:ir.ui.view,arch_db:food_blend_optimization.product_product_inherit
+msgid "Nutrimental Info"
+msgstr "Información nutrimental"
+
+#. module: food_blend_optimization
+#: model:ir.ui.menu,name:food_blend_optimization.nutrimental_needs
+msgid "Nutrimental Needs"
+msgstr "Requerimiento nutrimental"
+
+#. module: food_blend_optimization
+#: model:ir.ui.menu,name:food_blend_optimization.nutrimental_values
+msgid "Nutrimental Values"
+msgstr "Valores Nutrimentales"
+
+#. module: food_blend_optimization
+#: model:ir.model,name:food_blend_optimization.model_nutrimental_group
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs_line__group_id
+msgid "Nutrimental group"
+msgstr "Grupo nutrimental"
+
+#. module: food_blend_optimization
+#: model:ir.actions.act_window,name:food_blend_optimization.nutrimental_group_action
+msgid "Nutrimental groups"
+msgstr "Grupos nutrimentales"
+
+#. module: food_blend_optimization
+#: model:ir.actions.act_window,name:food_blend_optimization.nutrimental_info_action
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_process__nutriment_ids
+#: model:ir.model.fields,field_description:food_blend_optimization.field_product_product__nutrimental_ids
+#: model_terms:ir.ui.view,arch_db:food_blend_optimization.view_product_category_form
+msgid "Nutrimental info"
+msgstr "Información Nutrimental"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__need_id
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs_line__need_id
+msgid "Nutrimental need"
+msgstr "Requerimiento nutrimental"
+
+#. module: food_blend_optimization
+#: model:ir.actions.act_window,name:food_blend_optimization.nutrimental_needs_action
+msgid "Nutrimental needs"
+msgstr "Requerimientos nutrimentales"
+
+#. module: food_blend_optimization
+#: model:ir.model,name:food_blend_optimization.model_nutrimental_needs_line
+msgid "Nutrimental needs specifications"
+msgstr "Especificaciones de requerimientos nutrimentales"
+
+#. module: food_blend_optimization
+#: model:ir.actions.act_window,name:food_blend_optimization.nutrimental_pairs_action
+#: model:ir.model,name:food_blend_optimization.model_nutrimental_pairs
+#: model:ir.model,name:food_blend_optimization.model_nutrimental_pairs_line
+msgid "Nutrimental pairs"
+msgstr "Unidades nutrimentales"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs_line__nutriment_id
+msgid "Nutrimental value"
+msgstr "Valor nutrimental"
+
+#. module: food_blend_optimization
+#: model:ir.actions.act_window,name:food_blend_optimization.nutrimental_value_action
+msgid "Nutrimental values"
+msgstr "Valor nutrimental"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_group__value_ids
+msgid "Nutriments"
+msgstr "Nutrimentos"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__objective_value
+msgid "Objective Value"
+msgstr "Valor función objetivo"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs_line__pair_id
+msgid "Pair"
+msgstr "Unidad"
+
+#. module: food_blend_optimization
+#: model_terms:ir.ui.view,arch_db:food_blend_optimization.blend_optimization_form
+msgid "Process"
+msgstr "Procesar"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__process_ids
+#: model_terms:ir.ui.view,arch_db:food_blend_optimization.blend_optimization_form
+msgid "Process"
+msgstr "Procesamiento"
+
+#. module: food_blend_optimization
+#: model:ir.model,name:food_blend_optimization.model_product_product
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_line__product_id
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_process__product_id
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_info__product_id
+msgid "Product"
+msgstr "Producto"
+
+#. module: food_blend_optimization
+#: model:ir.model,name:food_blend_optimization.model_product_category
+msgid "Product Category"
+msgstr "Categoría de producto"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__product_ids
+msgid "Products"
+msgstr "Productos"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_process__reference_unit
+msgid "Reference Unit"
+msgstr "Unidad de Referencia"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_line__reference_lp
+msgid "Reference from LP"
+msgstr "Referencia de Programación Lineal"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_process__reference_value
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs_line__reference_value
+msgid "Reference value"
+msgstr "Valor de referencia"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__needs_ids
+msgid "Reference values"
+msgstr "Valores de referencia"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__activity_user_id
+msgid "Responsible User"
+msgstr "Usuario Responsable"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs_line__type
+msgid "Restriction"
+msgstr "Restricción"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__result_ids
+#: model_terms:ir.ui.view,arch_db:food_blend_optimization.blend_optimization_form
+msgid "Results"
+msgstr "Resultados"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Error de envío de SMS"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_value__sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,help:food_blend_optimization.field_nutrimental_value__sequence
+msgid "Sequence to choose the order of the nutriments"
+msgstr "Secuencia para elegir el orden de los nutrimentos"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,help:food_blend_optimization.field_nutrimental_info__code
+#: model:ir.model.fields,help:food_blend_optimization.field_nutrimental_value__code
+msgid "Short name used to identify the nutrimental value"
+msgstr "Nombre corto para identificar el nutrimento"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields.selection,name:food_blend_optimization.selection__nutrimental_pairs_line__unit_type__single
+msgid "Single"
+msgstr "Sencillo"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__solution
+msgid "Solution status"
+msgstr "Estatus de solución"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs__need_line_ids
+msgid "Specific needs"
+msgstr "Necesidades específicas"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__state
+msgid "State"
+msgstr "Estado"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,help:food_blend_optimization.field_blend_optimization__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr "Estado basado en actividades\n"
+"Vencido: La fecha de la actividad ha vencido\n"
+"Hoy: La fecha de la actividad está programada para hoy\n"
+"Planificado: La actividad está programada para una fecha posterior."
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__total_mix
+msgid "Sum of values"
+msgstr "Suma de valores"
+
+#. module: food_blend_optimization
+#: model_terms:ir.ui.view,arch_db:food_blend_optimization.product_product_inherit
+msgid "Nutrimental info"
+msgstr "Tabla Nutrimental"
+
+#. module: food_blend_optimization
+#: model:ir.model.constraint,message:food_blend_optimization.constraint_nutrimental_info_code
+msgid "There is already a code used for a nutriment. Please select a new one"
+msgstr "Ya existe un código para este nutrimento. Favor de utilizar uno diferente"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs_line__type
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs_line__unit_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,help:food_blend_optimization.field_blend_optimization__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipo de excepción de actividad en el registro"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_line__uom_id
+msgid "Unit of Measure"
+msgstr "Unidad de Medida"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_process__uom_id
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_info__uom_id
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_needs_line__uom_id
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_pairs_line__uom_id
+msgid "Unit of measure"
+msgstr "Unidad de Medida"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__message_unread
+msgid "Unread Messages"
+msgstr "Mensajes no leídos"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Contador de mensajes no leídos"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_line__reference_uom_id
+msgid "UoM Ref"
+msgstr "Unidad de Referencia"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,help:food_blend_optimization.field_nutrimental_needs__based_on
+msgid ""
+"Used to display the computations the needs are based on, for the computation"
+" of every value use X"
+msgstr "Se utiliza para mostrar los cálculos en los que se basa el requerimiento, para el cómputo de cada valor use X"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,help:food_blend_optimization.field_nutrimental_needs_line__need_id
+msgid "Used to specify the need that is needed to cover"
+msgstr "Utilizado para especificar el requerimiento a cubrir"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_line__value
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_process__actual_value
+#: model:ir.model.fields,field_description:food_blend_optimization.field_nutrimental_info__value
+msgid "Value"
+msgstr "Valor"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization_line__percentage
+msgid "Value (%)"
+msgstr "Valor (%)"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,field_description:food_blend_optimization.field_blend_optimization__website_message_ids
+msgid "Website Messages"
+msgstr "Mensajes de sitio web"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,help:food_blend_optimization.field_blend_optimization__website_message_ids
+msgid "Website communication history"
+msgstr "Historial de comunicación por sitio web"
+
+#. module: food_blend_optimization
+#: model:ir.model.fields,help:food_blend_optimization.field_nutrimental_needs_line__code
+msgid "Write the code or operations the calculation must take into account"
+msgstr "Escribe el código o las operaciones que los cálculos deben tomar en cuenta"
+
+#. module: food_blend_optimization
+#: model:ir.model,name:food_blend_optimization.model_blend_optimization_process
+msgid "blend.optimization.process"
+msgstr "Procesamiento para optimización de mezclas"

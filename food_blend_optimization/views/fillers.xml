@@ -1,0 +1,192 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+
+        <record model="ir.ui.view" id="nutriments_info_tree">
+            <field name="name">Nutriment info</field>
+            <field name="model">nutrimental.info</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="product_id"/>
+                    <field name="code"/>
+                    <field name="nutriment_id"/>
+                    <field name="value"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="nutrimental_info_action">
+            <field name="name">Nutrimental info</field>
+            <field name="res_model">nutrimental.info</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="nutrimental_value_action">
+            <field name="name">Nutrimental values</field>
+            <field name="res_model">nutrimental.value</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.ui.view" id="nutriments_tree">
+            <field name="name">Nutriments</field>
+            <field name="model">nutrimental.value</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="sequence" widget="handle"/>
+                    <field name="code"/>
+                    <field name="uom_id"/>
+                    <field name="name"/>
+                    <field name="group_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="nutrimental_value_action">
+            <field name="name">Nutrimental values</field>
+            <field name="res_model">nutrimental.value</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.ui.view" id="nutriments_group">
+            <field name="name">Nutriments Group</field>
+            <field name="model">nutrimental.group</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="value_ids" widget="many2many_tags"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="nutrimental_pairs_action">
+            <field name="name">Nutrimental pairs</field>
+            <field name="res_model">nutrimental.pairs</field>
+            <field name="view_mode">form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="nutrimental_group_action">
+            <field name="name">Nutrimental groups</field>
+            <field name="res_model">nutrimental.group</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="nutrimental_pairs_form" model="ir.ui.view">
+            <field name="name">Nutrimental pairs</field>
+            <field name="model">nutrimental.pairs</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <group>
+                            <field name="display_name"/>
+                        </group>
+                        <field name="pair_lines">
+                            <tree editable="bottom">
+                                <field name="display_name"/>
+                                <field name="uom_id" force_save="1"/>
+                                <field name="type" force_save="1"/>
+                                <field name="group_id" force_save="1"/>
+                                <field name="nutriment_id" force_save="1"/>
+                                <field name="unit_type" required="1"/>
+                            </tree>
+                        </field>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="nutrimental_needs_form" model="ir.ui.view">
+            <field name="name">Nutrimental needs</field>
+            <field name="model">nutrimental.needs</field>
+            <field name="arch" type="xml">
+                <form>
+                    <!--  <header>
+                         <field name="state" widget="statusbar"/>
+                         <button name="get_lines" string="Procesar" type="object" class="oe_highlight"
+                                 attrs="{'invisible':[('status', '=','done')]}"/>
+                         <button name="set_draft" string="Establecer borrador" type="object" class="oe_highlight"
+                                 attrs="{'invisible':[('status', '=','draft')]}"/>
+                         <button name="set_query" string="Establecer consulta" type="object" class="oe_highlight"
+                                 attrs="{'invisible':[('status', '=','query')]}"/>
+                </header>-->
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" required="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="nutriment_reference_id"/>
+                                <!--
+                                <label for="nutriment_reference_id"/>
+                                <div class="o_row">
+                                    <field name="nutriment_reference_id" string="Nutriment reference"/>
+                                    <span>
+                                        <field name="uom_id"/>
+                                    </span>
+                                </div>-->
+                            </group>
+                        </group>
+                        <notebook position="inside">
+                            <page string="Needs" name="needs">
+                                <field name="need_line_ids">
+                                    <tree editable="bottom">
+                                        <field name="nutriment_ids" widget="many2many_tags"/>
+                                        <field name="code"/>
+                                        <field name="type"/>
+                                        <field name="reference_value"/>
+                                        <field name="uom_id"/>
+                                        <field name="objective_function"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <group>
+                                                <field name="nutriment_ids" widget="many2many_tags"/>
+                                                <field name="code"/>
+                                            </group>
+                                            <group>
+                                                <field name="reference_value"/>
+                                                <field name="uom_id"/>
+                                            </group>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                            <page string="Code" name="code">
+                                <field name="based_on"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="nutriments_needs">
+            <field name="name">Nutrimental Needs</field>
+            <field name="model">nutrimental.needs</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="nutrimental_needs_action">
+            <field name="name">Nutrimental needs</field>
+            <field name="res_model">nutrimental.needs</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Configuration" id="blend_configurations" parent="blend_optimization"/>
+        <menuitem name="Nutrimental Info" id="nutrimental_info" parent="blend_configurations" sequence="0"
+                  action="nutrimental_info_action"/>
+        <menuitem name="Nutrimental Values" id="nutrimental_values" parent="blend_configurations" sequence="1"
+                  action="nutrimental_value_action"/>
+        <menuitem name="Nutrimental Groups" id="nutrimental_groups" parent="blend_configurations" sequence="2"
+                  action="nutrimental_group_action"/>
+        <menuitem name="Nutrimental Needs" id="nutrimental_needs" parent="blend_configurations" sequence="3"
+                  action="nutrimental_needs_action"/>
+
+    </data>
+</odoo>

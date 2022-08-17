@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_nutrimental_info,nutrimental.info,model_nutrimental_info,base.group_user,1,1,1,1
+access_blend_optimization,blend.optimization,model_blend_optimization,base.group_user,1,1,1,1
+access_nutrimental_value,nutrimental.value,model_nutrimental_value,base.group_user,1,1,1,1
+access_nutrimental_needs,nutrimental.needs,model_nutrimental_needs,base.group_user,1,1,1,1
+access_nutrimental_group,nutrimental.group,model_nutrimental_group,base.group_user,1,1,1,1
+access_nutrimental_pairs,nutrimental.pairs,model_nutrimental_pairs,base.group_user,1,1,1,1
+access_nutrimental_pairs_line,nutrimental.pairs.line,model_nutrimental_pairs_line,base.group_user,1,1,1,1
+access_nutrimental_needs_line,nutrimental.needs.line,model_nutrimental_needs_line,base.group_user,1,1,1,1
+access_blend_optimization_line,blend.optimization.line,model_blend_optimization_line,base.group_user,1,1,1,1
+access_blend_optimization_process,blend.optimization.process,model_blend_optimization_process,base.group_user,1,1,1,1
